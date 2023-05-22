@@ -61,7 +61,7 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: url(../content/decor/hero-section/group-items.svg) 50% 50% / cover no-repeat ,linear-gradient(55.95deg, #ff3f3a1f 0%, #f75e051f 100%);
+  background: url(../content/decor/hero-section/group-items.svg) 50% 20% / cover no-repeat ,linear-gradient(55.95deg, #ff3f3a1f 0%, #f75e051f 100%);
 }
 
 .header__top {}
