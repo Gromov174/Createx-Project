@@ -58,8 +58,6 @@ $('.directions__cards').on('click', function(e){
   
 })
 
-})
-
 
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
