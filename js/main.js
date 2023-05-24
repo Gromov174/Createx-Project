@@ -40,8 +40,22 @@ $('.testimonials__slick-next').on('click', function(e){
   $('.testimonials__slider').slick('slickNext') 
 })
 
+// ==========NO-ACTIVE========== //
+
 $('.button').on('click', function(e){
   e.preventDefault()
+})
+
+$('.team__social').on('click', function(e){
+  e.preventDefault()
+})
+
+$('.directions__cards').on('click', function(e){
+  e.preventDefault()
+})
+
+// ==========NO-ACTIVE========== //
+  
 })
 
 })
