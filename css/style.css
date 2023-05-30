@@ -2008,12 +2008,7 @@ html, body {
   .certificate__company {
     display: none;
   }
-}
-
-/* ==========ADAPTIVE-365PX========== */
-
-@media (max-width: 365px) {
-  .header__title {
+   .header__title {
     font-size: 2.7rem;
   }
 
