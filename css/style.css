@@ -615,6 +615,9 @@ html, body {
 }
 
 .certificate__img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   border-radius: 4px;
 }
 
@@ -1673,9 +1676,20 @@ html, body {
   color: #ffffffe6;
 }
 
-/* ==========ADAPTIVE========== */
+/* ==========ADAPTIVE-1200PX========== */
+
+@media (max-width: 1200px) {
+  .header__main-img {
+    max-width: 500px;
+  }
+}
+
+/* ==========ADAPTIVE-1100PX========== */
 
 @media (max-width: 1100px) {
+
+  /* ==========HEADER-TOP========== */
+
   .burger {
     position: fixed;
     top: 0;
@@ -1698,9 +1712,8 @@ html, body {
     box-shadow: 0 0 10px -1px #bd0d0d;
   }
 
-  
   .burger span,
-  .burger::before, 
+  .burger::before,
   .burger::after,
   .burger--close span,
   .burger--close::before,
@@ -1711,20 +1724,23 @@ html, body {
     background-color: #1E212C;
     border-radius: 3px;
   }
-  
+
   .burger--close span {
-    visibility: hidden;  
+    visibility: hidden;
   }
+
   .burger--close::before,
   .burger--close::after {
     content: "";
     position: fixed;
     transition: all .3s;
   }
+
   .burger--close::before {
     bottom: 10;
     transform: rotate(45deg);
   }
+
   .burger--close::after {
     top: 10;
     transform: rotate(-45deg);
@@ -1795,11 +1811,201 @@ html, body {
   .header__user-btn {
     margin-right: 10px;
   }
+
+  /* ==========HEADER-BODY========== */
+
+
+  /* ==========ABOUT-US========== */
+
+  .about-us__text {
+    max-width: 500px;
+  }
+  .about-us__img {
+    max-width: 500px;
+  }
+  .statistics__img-box {
+    max-width: 700px;
+  }
+
+
+  .certificate__img-box img {
+    max-width: 600px;
+  }
 }
 
-@media (max-width: 400px) {
+/* ==========ADAPTIVE-1000PX========== */
+
+@media (max-width: 1000px) {
+  .header__main-img {
+    display: none;
+  }
+
+  .header__row {
+    display: none;
+  }
+
+ /* ==========ABOUT-US========== */
+
+  .about-us__img {
+    display: none;
+  }
+  
+  /* ==========CERTIFICATE========== */
+
+  .certificate__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificate__content {
+    margin: 0;
+  }
+  .certificate__heading {
+    text-align: center;
+  }
+  .certificate__title {
+    font-size: 2.375rem;
+  }
+  .certificate__text {
+    text-align: center;
+  }
+  .certificate__company {
+    margin-bottom: 20px;
+  }
+  .certificate__img-box {
+    box-shadow: none;
+  }
+}
+
+/* ==========ADAPTIVE-650PX========== */
+
+@media (max-width:650px) {
+  .statistics__img-box {
+    display: none;
+  }
+
+  .about-us__inner {
+    margin-bottom: 100px;
+  }
+  .directions__cards {
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+  }
+  .statistics__box {
+    margin: 0;
+  }
+}
+
+
+
+/* ==========ADAPTIVE-610PX========== */
+
+@media (max-width:610px) {
+}
+
+/* ==========ADAPTIVE-550PX========== */
+
+@media (max-width:550px) {
+  .statistics__img-box {
+    display: none;
+  }
+}
+
+/* ==========ADAPTIVE-500PX========== */
+
+@media (max-width: 550px) {
+  .header__title {
+    font-size: 3.3rem;
+  }
+  .about-us__title {
+    font-size: 2.375rem;
+  }
+  .about-us__text {
+    margin: 35px 0 50px;
+  }
+}
+
+/* ==========ADAPTIVE-450PX========== */
+
+@media (max-width: 450px) {
+
+  /* ==========HEADER-TOP========== */
+
   .header__top {
     min-width: none;
-    width: 100%;
+    left: 0;
+  }
+
+  /* ==========HEADER-BODY========== */
+
+  .header__title {
+    line-height: 120%;
+  }
+
+  .header__buttons-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+ /* ==========ABOUT-US========== */
+
+  .about-us__inner {
+    margin-bottom: 100px;
+  } 
+  .about-us__btn-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main__about-us {
+    padding-top: 140px;
+  }
+ /* ==========DIRECTIONS========== */
+
+  .main__directions {
+    padding-bottom: 130px;
+  }
+  .directions__title {
+    font-size: 2.375rem;
+  }
+  .directions__cards {
+    /* grid-template: 1fr 1fr 1fr / repeat(2, 1fr); */
+    display: flex;
+    flex-direction: column;
+  }
+  .directions__card {
+
+  }
+  .directions__card-empty {
+    visibility: hidden;
+  }
+
+ /* ==========CERTIFICATE========== */
+
+  /* .certificate__inner {
+    flex-direction: column;
+  }
+  
+  .certificate__content {
+  }
+
+  .certificate__heading {
+    text-align: center;
+  }
+
+  .certificate__title {
+    font-size: 2.375rem;
+  }
+  .certificate__text {
+    text-align: center;
+  }
+  .certificate__img-box img {
+    max-width: 420px;
+  } */
+}
+
+/* ==========ADAPTIVE-400PX========== */
+
+@media (max-width: 400px) {
+  
+  .certificate__company {
+    display: none;
   }
 }
