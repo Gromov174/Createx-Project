@@ -2279,7 +2279,7 @@ html, body {
   /* ==========BLOG========== */
 
   .main__blog {
-    padding: 10px 0 50px;
+    padding: 30px 0 50px;
   }
   .blog__top {
     flex-direction: column;
