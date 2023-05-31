@@ -2158,7 +2158,6 @@ html, body {
 
   .header {
     padding: 15px 0 50px;
-    height: 100%;
   }
   .header__top {
     min-width: none;
@@ -2221,23 +2220,7 @@ html, body {
   .certificate__title {
     font-size: 2rem;
   }
-  /* .certificate__inner {
-    flex-direction: column;
-  }
   
-  .certificate__content {
-  }
-
-  .certificate__heading {
-    text-align: center;
-  }
-  .certificate__text {
-    text-align: center;
-  }
-  .certificate__img-box img {
-    max-width: 420px;
-  } */
-
   /* ==========TEAM-SLIDER========== */
 
   .main__team {
