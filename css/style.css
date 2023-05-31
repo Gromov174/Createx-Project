@@ -2313,12 +2313,12 @@ html, body {
     font-size: 2rem;
   }
   .feedback__heading {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .feedback__form-info {
     display: flex;
     flex-direction: column;
-    gap: 10px 0px;
+    gap: 5px 0px;
     margin-bottom: 10px;
   }
   .feedback__textarea {
@@ -2327,7 +2327,7 @@ html, body {
   .feedback__accept {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5px;
   }
 
   /* ==========FOOTER========== */
